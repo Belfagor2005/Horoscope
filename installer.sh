@@ -1,18 +1,18 @@
 #!/bin/bash
 
-## setup command=wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/horoscope/main/installer.sh -O - | /bin/sh
+## setup command=wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/Horoscope/main/installer.sh -O - | /bin/sh
 
 ## Only This 2 lines to edit with new version ######
 version='1.0'
 changelog='\nInit Plugin'
 ##############################################################
-TMPPATH=/tmp/horoscope-main
+TMPPATH=/tmp/Horoscope-main
 FILEPATH=/tmp/main.tar.gz
 
 if [ ! -d /usr/lib64 ]; then
-	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/oroscopo
+	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/horoscope
 else
-	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/oroscopo
+	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/horoscope
 fi
 
 ## check depends packges
@@ -100,9 +100,9 @@ fi
 # # fi
 sleep 2
 
-wget --no-check-certificate 'https://github.com/Belfagor2005/horoscope/archive/refs/heads/main.tar.gz'
+wget --no-check-certificate 'https://github.com/Belfagor2005/Horoscope/archive/refs/heads/main.tar.gz'
 tar -xzf main.tar.gz
-cp -r 'horoscope-main/usr' '/'
+cp -r 'Horoscope-main/usr' '/'
 set +e
 cd
 sleep 2
