@@ -99,7 +99,6 @@ fi
 	# # opkg update && opkg --force-reinstall --force-overwrite install ffmpeg gstplayer exteplayer3 enigma2-plugin-systemplugins-serviceapp
 # # fi
 sleep 2
-
 wget --no-check-certificate 'https://github.com/Belfagor2005/Horoscope/archive/refs/heads/main.tar.gz'
 tar -xzf main.tar.gz
 cp -r 'Horoscope-main/usr' '/'
@@ -127,7 +126,7 @@ distro_value=$(grep '^distro=' "$FILE" | awk -F '=' '{print $2}')
 distro_version=$(grep '^version=' "$FILE" | awk -F '=' '{print $2}')
 python_vers=$(python --version 2>&1)
 echo "#########################################################
-#          Horoscope INSTALLED SUCCESSFULLY             #
+#               INSTALLED SUCCESSFULLY                  #
 #                developed by LULULLA                   #
 #               https://corvoboys.org                   #
 #########################################################
