@@ -1,0 +1,114 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Horoscope\n"
+"POT-Creation-Date: 2025-01-13 13:04+0100\n"
+"PO-Revision-Date: 2025-01-12 18:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: lululla\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: plugin.py\n"
+
+#: plugin.py:43
+#, python-format
+msgid ""
+"Horoscope v.%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: https://www.findyourfate.com\n"
+"\n"
+msgstr ""
+
+#: plugin.py:114 plugin.py:140
+msgid "Please wait, connecting to the server..."
+msgstr ""
+
+#: plugin.py:119
+msgid "Change"
+msgstr ""
+
+#: plugin.py:120 plugin.py:240 plugin.py:339
+msgid "Information"
+msgstr ""
+
+#: plugin.py:180 plugin.py:360
+msgid "Today's Horoscope "
+msgstr ""
+
+#: plugin.py:204
+msgid "Sign not found"
+msgstr ""
+
+#: plugin.py:315
+msgid "ARIES"
+msgstr ""
+
+#: plugin.py:315
+msgid "TAURUS"
+msgstr ""
+
+#: plugin.py:315
+msgid "GEMINI"
+msgstr ""
+
+#: plugin.py:315
+msgid "CANCER"
+msgstr ""
+
+#: plugin.py:316
+msgid "LION"
+msgstr ""
+
+#: plugin.py:316
+msgid "VIRGIN"
+msgstr ""
+
+#: plugin.py:316
+msgid "LIBRA"
+msgstr ""
+
+#: plugin.py:316
+msgid "SCORPION"
+msgstr ""
+
+#: plugin.py:317
+msgid "SAGITTARIUS"
+msgstr ""
+
+#: plugin.py:317
+msgid "CAPRICORN"
+msgstr ""
+
+#: plugin.py:317
+msgid "AQUARIUS"
+msgstr ""
+
+#: plugin.py:317
+msgid "PISCES"
+msgstr ""
+
+#: plugin.py:321
+msgid "Select a Zodiac Sign"
+msgstr ""
+
+#: plugin.py:324
+msgid "Close"
+msgstr ""
+
+#: plugin.py:325
+msgid "Select"
+msgstr ""
+
+#: plugin.py:360
+msgid "Horoscope"
+msgstr ""
