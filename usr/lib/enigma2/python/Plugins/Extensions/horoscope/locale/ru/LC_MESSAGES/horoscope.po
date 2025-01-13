@@ -1,0 +1,122 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Horoscope\n"
+"POT-Creation-Date: 2025-01-13 13:04+0100\n"
+"PO-Revision-Date: 2025-01-13 14:38+0100\n"
+"Last-Translator: Warder <ciksa@seznam.cz>\n"
+"Language-Team: lululla\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: plugin.py\n"
+
+#: plugin.py:43
+#, python-format
+msgid ""
+"Horoscope v.%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: https://www.findyourfate.com\n"
+"\n"
+msgstr ""
+"Гороскоп v.%s\n"
+"\n"
+"Автор: Lululla\n"
+"\n"
+"Графика: Oktus\n"
+"\n"
+"Rss Гороскоп: https://www.findyourfate.com\n"
+"\n"
+
+#: plugin.py:114 plugin.py:140
+msgid "Please wait, connecting to the server..."
+msgstr "Пожалуйста, подождите, идет подключение к серверу..."
+
+#: plugin.py:119
+msgid "Change"
+msgstr "Изменить"
+
+#: plugin.py:120 plugin.py:240 plugin.py:339
+msgid "Information"
+msgstr "Информация"
+
+#: plugin.py:180 plugin.py:360
+msgid "Today's Horoscope "
+msgstr "Гороскоп на сегодня "
+
+#: plugin.py:204
+msgid "Sign not found"
+msgstr "Знак не найден"
+
+#: plugin.py:315
+msgid "ARIES"
+msgstr "ОВЕН"
+
+#: plugin.py:315
+msgid "TAURUS"
+msgstr "ТЕЛЕЦ"
+
+#: plugin.py:315
+msgid "GEMINI"
+msgstr "БЛИЗНЕЦЫ"
+
+#: plugin.py:315
+msgid "CANCER"
+msgstr "РАК"
+
+#: plugin.py:316
+msgid "LION"
+msgstr "ЛЕВ"
+
+#: plugin.py:316
+msgid "VIRGIN"
+msgstr "ДЕВСТВЕННИК"
+
+#: plugin.py:316
+msgid "LIBRA"
+msgstr "ВЕСЫ"
+
+#: plugin.py:316
+msgid "SCORPION"
+msgstr "СКОРПИОН"
+
+#: plugin.py:317
+msgid "SAGITTARIUS"
+msgstr "СТРЕЛЕЦ"
+
+#: plugin.py:317
+msgid "CAPRICORN"
+msgstr "КОЗЕРОГ"
+
+#: plugin.py:317
+msgid "AQUARIUS"
+msgstr "ВОДОЛЕЙ"
+
+#: plugin.py:317
+msgid "PISCES"
+msgstr "РЫБЫ"
+
+#: plugin.py:321
+msgid "Select a Zodiac Sign"
+msgstr "Выберите знак зодиака"
+
+#: plugin.py:324
+msgid "Close"
+msgstr "Закрыть"
+
+#: plugin.py:325
+msgid "Select"
+msgstr "Выбрать"
+
+#: plugin.py:360
+msgid "Horoscope"
+msgstr "Гороскоп"

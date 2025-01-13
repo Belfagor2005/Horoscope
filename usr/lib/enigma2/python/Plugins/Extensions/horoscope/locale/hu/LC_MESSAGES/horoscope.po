@@ -1,0 +1,122 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Horoscope\n"
+"POT-Creation-Date: 2025-01-13 13:04+0100\n"
+"PO-Revision-Date: 2025-01-13 14:37+0100\n"
+"Last-Translator: Warder <ciksa@seznam.cz>\n"
+"Language-Team: lululla\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: plugin.py\n"
+
+#: plugin.py:43
+#, python-format
+msgid ""
+"Horoscope v.%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: https://www.findyourfate.com\n"
+"\n"
+msgstr ""
+"Horoszkóp v.%s\n"
+"\n"
+"Szerző: Lululla\n"
+"\n"
+"Grafika: Oktus\n"
+"\n"
+"RSS horoszkóp: https://www.findyourfate.com\n"
+"\n"
+
+#: plugin.py:114 plugin.py:140
+msgid "Please wait, connecting to the server..."
+msgstr "Kérjük, várjon, csatlakozik a szerverhez..."
+
+#: plugin.py:119
+msgid "Change"
+msgstr "Változtatás"
+
+#: plugin.py:120 plugin.py:240 plugin.py:339
+msgid "Information"
+msgstr "Információ"
+
+#: plugin.py:180 plugin.py:360
+msgid "Today's Horoscope "
+msgstr "A mai horoszkóp "
+
+#: plugin.py:204
+msgid "Sign not found"
+msgstr "A jel nem található"
+
+#: plugin.py:315
+msgid "ARIES"
+msgstr "KOS"
+
+#: plugin.py:315
+msgid "TAURUS"
+msgstr "BIKA"
+
+#: plugin.py:315
+msgid "GEMINI"
+msgstr "IKREK"
+
+#: plugin.py:315
+msgid "CANCER"
+msgstr "RÁK"
+
+#: plugin.py:316
+msgid "LION"
+msgstr "OROSZLÁN"
+
+#: plugin.py:316
+msgid "VIRGIN"
+msgstr "SZŰZ"
+
+#: plugin.py:316
+msgid "LIBRA"
+msgstr "MÉRLEG"
+
+#: plugin.py:316
+msgid "SCORPION"
+msgstr "SKORPIÓ"
+
+#: plugin.py:317
+msgid "SAGITTARIUS"
+msgstr "NYILAS"
+
+#: plugin.py:317
+msgid "CAPRICORN"
+msgstr "BAK"
+
+#: plugin.py:317
+msgid "AQUARIUS"
+msgstr "VÍZÖNTŐ"
+
+#: plugin.py:317
+msgid "PISCES"
+msgstr "HALAK"
+
+#: plugin.py:321
+msgid "Select a Zodiac Sign"
+msgstr "Válasszon ki egy csillagjegyet"
+
+#: plugin.py:324
+msgid "Close"
+msgstr "Bezár"
+
+#: plugin.py:325
+msgid "Select"
+msgstr "Kiválasztás"
+
+#: plugin.py:360
+msgid "Horoscope"
+msgstr "Horoszkóp"
