@@ -1,0 +1,11 @@
+Package: enigma2-plugin-extensions-horoscope
+Version: 1.0
+Section: enigma2
+Priority: optional
+Architecture: all
+Maintainer: Lululla
+Description: horoscope en
+Source: enigma2-plugin-extensions-horoscope
+Homepage: *
+OE: enigma2-plugin-extensions-horoscope
+License: gpl
