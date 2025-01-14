@@ -1,0 +1,151 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Horoscope\n"
+"POT-Creation-Date: 2025-01-14 20:08+0100\n"
+"PO-Revision-Date: 2025-01-14 20:09+0100\n"
+"Last-Translator: \n"
+"Language-Team: lululla\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: plugin.py\n"
+
+#: plugin.py:71
+msgid "Global Horoscope"
+msgstr "Oroscopo Globale"
+
+#: plugin.py:72
+#, python-format
+msgid "Horoscope v.%s"
+msgstr ""
+
+#: plugin.py:74
+#, python-format
+msgid ""
+"%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: %s\n"
+"\n"
+msgstr ""
+"%s\n"
+"\n"
+"Autore: Lululla\n"
+"\n"
+"Grafica: Oktus\n"
+"\n"
+"Rss Feed Horoscope: %s\n"
+"\n"
+
+#: plugin.py:93
+msgid "ARIES"
+msgstr "ARIETE"
+
+#: plugin.py:93
+msgid "TAURUS"
+msgstr "TORO"
+
+#: plugin.py:93
+msgid "GEMINI"
+msgstr "GEMELLI"
+
+#: plugin.py:93
+msgid "CANCER"
+msgstr "CANCRO"
+
+#: plugin.py:94
+msgid "LEO"
+msgstr "LEONE"
+
+#: plugin.py:94
+msgid "VIRGO"
+msgstr "VERGINE"
+
+#: plugin.py:94
+msgid "LIBRA"
+msgstr "BILANCIA"
+
+#: plugin.py:94
+msgid "SCORPIO"
+msgstr "SCORPIONE"
+
+#: plugin.py:95
+msgid "SAGITTARIUS"
+msgstr "SAGITTARIO"
+
+#: plugin.py:95
+msgid "CAPRICORN"
+msgstr "CAPRICORNO"
+
+#: plugin.py:95
+msgid "AQUARIUS"
+msgstr "ACQUARIO"
+
+#: plugin.py:95
+msgid "PISCES"
+msgstr "PESCI"
+
+#: plugin.py:278 plugin.py:395 plugin.py:441
+msgid "Please wait, connecting to the server..."
+msgstr "Please wait, connecting to the server..."
+
+#: plugin.py:288 plugin.py:404
+msgid "Close"
+msgstr "Esci"
+
+#: plugin.py:289
+msgid "Select"
+msgstr "Seleziona"
+
+#: plugin.py:303
+msgid "Please Select"
+msgstr "Seleziona Prego"
+
+#: plugin.py:405
+msgid "Read"
+msgstr "Leggi"
+
+#: plugin.py:409 plugin.py:448
+msgid "0 - Halign Left"
+msgstr "0 - Allinea Sx"
+
+#: plugin.py:411 plugin.py:451
+msgid "0 - Halign Right"
+msgstr "0 - Allinea Dx"
+
+#: plugin.py:469
+msgid ""
+"Addons Download Failure\n"
+"No internet connection or server down!"
+msgstr ""
+"Errore di download dei componenti aggiuntivi\n"
+"Nessuna connessione Internet o server inattivo!"
+
+#: plugin.py:581
+msgid ""
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+
+#: plugin.py:589
+msgid "Information"
+msgstr "Informazioni"
+
+#~ msgid "Change"
+#~ msgstr "Cambia"
+
+#~ msgid "LION"
+#~ msgstr "LEONE"
+
+#~ msgid "Select a Zodiac Sign"
+#~ msgstr "Seleziona un Segno Zodiacale"

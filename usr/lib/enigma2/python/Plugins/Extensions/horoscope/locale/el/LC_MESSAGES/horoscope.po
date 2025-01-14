@@ -1,0 +1,122 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Horoscope\n"
+"POT-Creation-Date: 2025-01-13 13:04+0100\n"
+"PO-Revision-Date: 2025-01-14 13:31+0100\n"
+"Last-Translator: Warder <ciksa@seznam.cz>\n"
+"Language-Team: lululla\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-SearchPath-0: plugin.py\n"
+
+#: plugin.py:43
+#, python-format
+msgid ""
+"Horoscope v.%s\n"
+"\n"
+"Author: Lululla\n"
+"\n"
+"Graphics: Oktus\n"
+"\n"
+"Rss Horoscope: https://www.findyourfate.com\n"
+"\n"
+msgstr ""
+"Ωροσκόπιο v.%s\n"
+"\n"
+"Συγγραφέας: Lululla\n"
+"\n"
+"Γραφικά: Oktus\n"
+"\n"
+"Ωροσκόπιο Rss: https://www.findyourfate.com\n"
+"\n"
+
+#: plugin.py:114 plugin.py:140
+msgid "Please wait, connecting to the server..."
+msgstr "Περιμένετε, σύνδεση στον διακομιστή..."
+
+#: plugin.py:119
+msgid "Change"
+msgstr "Αλλαγή"
+
+#: plugin.py:120 plugin.py:240 plugin.py:339
+msgid "Information"
+msgstr "Πληροφορίες"
+
+#: plugin.py:180 plugin.py:360
+msgid "Today's Horoscope "
+msgstr "Το σημερινό Ωροσκόπιο "
+
+#: plugin.py:204
+msgid "Sign not found"
+msgstr "Το σημάδι δεν βρέθηκε"
+
+#: plugin.py:315
+msgid "ARIES"
+msgstr "ΚΡΙΟΣ"
+
+#: plugin.py:315
+msgid "TAURUS"
+msgstr "ΤΑΥΡΟΣ"
+
+#: plugin.py:315
+msgid "GEMINI"
+msgstr "ΔΙΔΥΜΟΙ"
+
+#: plugin.py:315
+msgid "CANCER"
+msgstr "ΚΑΡΚΙΝΟΣ"
+
+#: plugin.py:316
+msgid "LION"
+msgstr "ΛΙΟΝΤΑΡΙ"
+
+#: plugin.py:316
+msgid "VIRGIN"
+msgstr "ΠΑΡΘΕΝΑ"
+
+#: plugin.py:316
+msgid "LIBRA"
+msgstr "ΖΥΓΟΣ"
+
+#: plugin.py:316
+msgid "SCORPION"
+msgstr "ΣΚΟΡΠΙΟΣ"
+
+#: plugin.py:317
+msgid "SAGITTARIUS"
+msgstr "ΤΟΞΟΤΗΣ"
+
+#: plugin.py:317
+msgid "CAPRICORN"
+msgstr "ΑΙΓΟΚΕΡΩΣ"
+
+#: plugin.py:317
+msgid "AQUARIUS"
+msgstr "ΥΔΡΟΧΟΟΣ"
+
+#: plugin.py:317
+msgid "PISCES"
+msgstr "ΙΧΘΥΕΣ"
+
+#: plugin.py:321
+msgid "Select a Zodiac Sign"
+msgstr "Επιλέξτε ένα ζώδιο"
+
+#: plugin.py:324
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: plugin.py:325
+msgid "Select"
+msgstr "Επιλέξτε"
+
+#: plugin.py:360
+msgid "Horoscope"
+msgstr "Ωροσκόπιο"
