@@ -1,5 +1,4 @@
 #!/bin/sh
-
 echo "Checking for an older version in the system..."
 if [ -d /usr/lib/enigma2/python/Plugins/Extensions/horoscope ]
 then
