@@ -2,7 +2,10 @@
 # -*- coding: utf-8 -*-
 
 # ======================================================================
-# written by Lululla at 20240720
+# LinuxsatPanel Plugin
+# Coded by masterG - oktus - pcd
+#
+# rewritten by Lululla at 20240720
 #
 # ATTENTION PLEASE...
 # This is free software; you can redistribute it and/or modify it under
@@ -58,7 +61,10 @@ patterns_to_remove = [
 	r'scrollbarWidth="[^"]*"',
 	r'scrollbarSliderBorderWidth="[^"]*"',
 	r'textoffsets\s*="[^"]*"',
-	r'secondfont\s*="[^"]*"'
+	r'secondfont\s*="[^"]*"',
+	r'scrollbarBorderWidth="[^"]*"',
+	r'scrollbarForegroundColor="[^"]*"',
+	r'scrollbarBorderColor="[^"]*"'
 ]
 
 
