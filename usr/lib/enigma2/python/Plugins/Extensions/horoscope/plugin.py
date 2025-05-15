@@ -22,50 +22,61 @@
 # ======================================================================
 
 
-from . import (
-	_,
-	isDreambox,
-	isWQHD,
-	isFHD,
-	isHD,
-	checkGZIP,
-	add_skin_font,
-	HALIGN,
-)
-
-from .NewOeSk import ctrlSkin
-
-from Components.ActionMap import ActionMap
-from Components.Label import Label
-from Components.MenuList import MenuList
-from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaTest
-from Components.Pixmap import Pixmap
-from Plugins.Plugin import PluginDescriptor
-from Screens.MessageBox import MessageBox
-from Screens.Screen import Screen
-from Tools.Directories import fileExists, resolveFilename, SCOPE_CURRENT_SKIN
+# Python standard libraries
+import html
+import re
+import unicodedata
 from datetime import datetime
 from os import path as os_path
 from sys import version_info
-from twisted.web.client import getPage
+
+# Enigma2 core
 from enigma import (
 	RT_HALIGN_LEFT,
 	RT_HALIGN_RIGHT,
 	RT_VALIGN_CENTER,
+	eListboxPythonMultiContent,
 	eTimer,
 	gFont,
 	loadPNG,
-	eListboxPythonMultiContent,
 )
 
-import html
-import re
-import unicodedata
+# Enigma2 Components
+from Components.ActionMap import ActionMap
+from Components.Label import Label
+from Components.MenuList import MenuList
+from Components.MultiContent import MultiContentEntryPixmapAlphaTest, MultiContentEntryText
+from Components.Pixmap import Pixmap
+
+# Enigma2 Screens
+from Screens.MessageBox import MessageBox
+from Screens.Screen import Screen
+
+# Enigma2 Plugins
+from Plugins.Plugin import PluginDescriptor
+
+# Enigma2 Tools
+from Tools.Directories import SCOPE_CURRENT_SKIN, fileExists, resolveFilename
+
+# Twisted
+from twisted.web.client import getPage
+
+# Local imports
+from . import (
+	_,
+	HALIGN,
+	add_skin_font,
+	checkGZIP,
+	isDreambox,
+	isFHD,
+	isHD,
+	isWQHD,
+)
+from .NewOeSk import ctrlSkin
 
 
-PY3 = False
-if version_info[0] == 3:
-	PY3 = True
+PY3 = version_info[0] == 3
+if PY3:
 	unicode = str
 
 version = '1.1'
