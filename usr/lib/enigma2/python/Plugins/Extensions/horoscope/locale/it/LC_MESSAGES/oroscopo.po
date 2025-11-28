@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Horoscope\n"
-"POT-Creation-Date: 2025-01-14 20:08+0100\n"
-"PO-Revision-Date: 2025-01-14 20:09+0100\n"
+"POT-Creation-Date: 2025-11-27 20:35+0100\n"
+"PO-Revision-Date: 2025-11-27 20:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: lululla\n"
 "Language: it_IT\n"
@@ -10,21 +10,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:71
+#: plugin.py:83
 msgid "Global Horoscope"
 msgstr "Oroscopo Globale"
 
-#: plugin.py:72
+#: plugin.py:84
 #, python-format
 msgid "Horoscope v.%s"
 msgstr ""
 
-#: plugin.py:74
+#: plugin.py:86
 #, python-format
 msgid ""
 "%s\n"
@@ -33,7 +33,7 @@ msgid ""
 "\n"
 "Graphics: Oktus\n"
 "\n"
-"Rss Horoscope: %s\n"
+"Rss Feeds Horoscope: %s\n"
 "\n"
 msgstr ""
 "%s\n"
@@ -45,83 +45,83 @@ msgstr ""
 "Rss Feed Horoscope: %s\n"
 "\n"
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "ARIES"
 msgstr "ARIETE"
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "TAURUS"
 msgstr "TORO"
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "GEMINI"
 msgstr "GEMELLI"
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "CANCER"
 msgstr "CANCRO"
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "LEO"
 msgstr "LEONE"
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "VIRGO"
 msgstr "VERGINE"
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "LIBRA"
 msgstr "BILANCIA"
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "SCORPIO"
 msgstr "SCORPIONE"
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "SAGITTARIUS"
 msgstr "SAGITTARIO"
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "CAPRICORN"
 msgstr "CAPRICORNO"
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "AQUARIUS"
 msgstr "ACQUARIO"
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "PISCES"
 msgstr "PESCI"
 
-#: plugin.py:278 plugin.py:395 plugin.py:441
+#: plugin.py:286 plugin.py:403 plugin.py:449
 msgid "Please wait, connecting to the server..."
 msgstr "Please wait, connecting to the server..."
 
-#: plugin.py:288 plugin.py:404
+#: plugin.py:296 plugin.py:412
 msgid "Close"
 msgstr "Esci"
 
-#: plugin.py:289
+#: plugin.py:297
 msgid "Select"
 msgstr "Seleziona"
 
-#: plugin.py:303
+#: plugin.py:311
 msgid "Please Select"
 msgstr "Seleziona Prego"
 
-#: plugin.py:405
+#: plugin.py:413
 msgid "Read"
 msgstr "Leggi"
 
-#: plugin.py:409 plugin.py:448
+#: plugin.py:417 plugin.py:456
 msgid "0 - Halign Left"
 msgstr "0 - Allinea Sx"
 
-#: plugin.py:411 plugin.py:451
+#: plugin.py:419 plugin.py:459
 msgid "0 - Halign Right"
 msgstr "0 - Allinea Dx"
 
-#: plugin.py:469
+#: plugin.py:477
 msgid ""
 "Addons Download Failure\n"
 "No internet connection or server down!"
@@ -129,7 +129,7 @@ msgstr ""
 "Errore di download dei componenti aggiuntivi\n"
 "Nessuna connessione Internet o server inattivo!"
 
-#: plugin.py:581
+#: plugin.py:569
 msgid ""
 "\n"
 "\n"
@@ -137,7 +137,7 @@ msgstr ""
 "\n"
 "\n"
 
-#: plugin.py:589
+#: plugin.py:577
 msgid "Information"
 msgstr "Informazioni"
 

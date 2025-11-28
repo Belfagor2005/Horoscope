@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Horoscope\n"
-"POT-Creation-Date: 2025-01-14 20:09+0100\n"
+"POT-Creation-Date: 2025-11-27 20:35+0100\n"
 "PO-Revision-Date: 2025-01-12 18:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: lululla\n"
@@ -11,21 +11,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
 "X-Poedit-SearchPath-0: plugin.py\n"
 
-#: plugin.py:71
+#: plugin.py:83
 msgid "Global Horoscope"
 msgstr ""
 
-#: plugin.py:72
+#: plugin.py:84
 #, python-format
 msgid "Horoscope v.%s"
 msgstr ""
 
-#: plugin.py:74
+#: plugin.py:86
 #, python-format
 msgid ""
 "%s\n"
@@ -34,98 +34,98 @@ msgid ""
 "\n"
 "Graphics: Oktus\n"
 "\n"
-"Rss Horoscope: %s\n"
+"Rss Feeds Horoscope: %s\n"
 "\n"
 msgstr ""
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "ARIES"
 msgstr ""
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "TAURUS"
 msgstr ""
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "GEMINI"
 msgstr ""
 
-#: plugin.py:93
+#: plugin.py:105
 msgid "CANCER"
 msgstr ""
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "LEO"
 msgstr ""
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "VIRGO"
 msgstr ""
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "LIBRA"
 msgstr ""
 
-#: plugin.py:94
+#: plugin.py:106
 msgid "SCORPIO"
 msgstr ""
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "SAGITTARIUS"
 msgstr ""
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "CAPRICORN"
 msgstr ""
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "AQUARIUS"
 msgstr ""
 
-#: plugin.py:95
+#: plugin.py:107
 msgid "PISCES"
 msgstr ""
 
-#: plugin.py:278 plugin.py:395 plugin.py:441
+#: plugin.py:286 plugin.py:403 plugin.py:449
 msgid "Please wait, connecting to the server..."
 msgstr ""
 
-#: plugin.py:288 plugin.py:404
+#: plugin.py:296 plugin.py:412
 msgid "Close"
 msgstr ""
 
-#: plugin.py:289
+#: plugin.py:297
 msgid "Select"
 msgstr ""
 
-#: plugin.py:303
+#: plugin.py:311
 msgid "Please Select"
 msgstr ""
 
-#: plugin.py:405
+#: plugin.py:413
 msgid "Read"
 msgstr ""
 
-#: plugin.py:409 plugin.py:448
+#: plugin.py:417 plugin.py:456
 msgid "0 - Halign Left"
 msgstr ""
 
-#: plugin.py:411 plugin.py:451
+#: plugin.py:419 plugin.py:459
 msgid "0 - Halign Right"
 msgstr ""
 
-#: plugin.py:469
+#: plugin.py:477
 msgid ""
 "Addons Download Failure\n"
 "No internet connection or server down!"
 msgstr ""
 
-#: plugin.py:581
+#: plugin.py:569
 msgid ""
 "\n"
 "\n"
 msgstr ""
 
-#: plugin.py:589
+#: plugin.py:577
 msgid "Information"
 msgstr ""

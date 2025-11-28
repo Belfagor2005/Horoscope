@@ -24,7 +24,7 @@
 
 # Python standard libraries
 import html
-import re
+from re import search, findall, DOTALL
 import unicodedata
 from datetime import datetime
 from os import path as os_path
@@ -484,12 +484,12 @@ class horoscopeMain(Screen):
 		data = page.decode('utf-8', errors='ignore')
 		try:
 			date_pattern = r"<h3><b>(.*?)</b></h3>"
-			date_match = re.search(date_pattern, data, re.DOTALL)
+			date_match = search(date_pattern, data, DOTALL)
 			if date_match:
 				self.full_date = date_match.group(1)
 
 			signs_pattern = r"<h5>([A-Za-z]+)</h5>\s*<p id=\"daily\">(.*?)</p>"
-			signs_matches = re.findall(signs_pattern, data, re.DOTALL)
+			signs_matches = findall(signs_pattern, data, DOTALL)
 
 			if not signs_matches:
 				print("Nessun segno zodiacale trovato.")
