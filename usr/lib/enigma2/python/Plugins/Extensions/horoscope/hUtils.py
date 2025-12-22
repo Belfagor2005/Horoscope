@@ -4,7 +4,7 @@
 import ssl
 import time
 from sys import version_info
-from os import makedirs, listdir
+from os import makedirs, listdir, unlink
 from os.path import exists, join, getmtime, isfile
 from . import plugin_path
 
