@@ -16,15 +16,14 @@
 # all and you must make the modified
 # code open to everyone. by Lululla
 # ======================================================================
-from __future__ import absolute_import
-from __future__ import print_function
+from __future__ import absolute_import, print_function
 from os.path import isfile
 from re import search
 __author__ = "Lululla"
 __email__ = "ekekaz@gmail.com"
 __copyright__ = 'Copyright (c) 2024 Lululla'
 __license__ = "GPL-v2"
-__version__ = "1.0.0"
+__version__ = "1.0"
 
 
 def newOE():

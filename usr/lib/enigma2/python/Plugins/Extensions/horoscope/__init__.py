@@ -5,7 +5,7 @@ __author__ = "Lululla"
 __email__ = "ekekaz@gmail.com"
 __copyright__ = 'Copyright (c) 2024 Lululla'
 __license__ = "GPL-v2"
-__version__ = "1.0.0"
+__version__ = "1.1"
 
 from Components.Language import language
 from enigma import (
@@ -20,7 +20,12 @@ import sys
 
 global HALIGN
 HALIGN = RT_HALIGN_LEFT
-plugin_path = os.path.dirname(sys.modules[__name__].__file__)
+
+
+try:
+    plugin_path = resolveFilename(SCOPE_PLUGINS, "Extensions/horoscope")
+except:
+    plugin_path = "/usr/lib/enigma2/python/Plugins/Extensions/horoscope"
 
 PluginLanguageDomain = 'horoscope'
 PluginLanguagePath = 'Extensions/horoscope/locale'
@@ -88,18 +93,34 @@ except:
 
 
 def add_skin_font():
-	global HALIGN
-	from enigma import addFont
-	from os import path as os_path
-	FNTPath = os_path.join(plugin_path + "/fonts")
-	# print('FNTPath=', FNTPath)
-	# addFont(filename, name, scale, isReplacement, render)
-	if any(s in lngx for s in locl):
-		HALIGN = RT_HALIGN_RIGHT
-		# addFont((FNTPath + '/NotoSansArabic.ttf'), 'lsat', 100, 1)
-		addFont((FNTPath + '/DejaVuSans.ttf'), 'lsat', 100, 1)
-	else:
-		addFont((FNTPath + '/DejaVuSans.ttf'), 'lsat', 100, 1)
+    global HALIGN
+    from enigma import addFont
+    from os import path as os_path
+    FNTPath = os_path.join(plugin_path, "fonts")
+    
+    # PROVA CON DIVERSI FONT
+    test_fonts = [
+		'DejaVuSans2.ttf',
+        'NotoSansArabic.ttf',
+        'DejaVuSans.ttf'
+    ]
+    
+    for font_file in test_fonts:
+        font_path = os_path.join(FNTPath, font_file)
+        if os_path.exists(font_path):
+            try:
+                addFont(font_path, 'lsat', 100, 1)
+                print("[Horoscope] SUCCESS: Loaded " + font_file + " as 'lsat'")
+                break
+            except Exception as e:
+                print("[Horoscope] FAILED to load " + font_file + ": " + str(e))
+    
+    # Imposta allineamento
+    if any(s in lngx for s in locl):
+        HALIGN = RT_HALIGN_RIGHT
+        print("[Horoscope] RTL for language: " + lngx)
+    else:
+        HALIGN = RT_HALIGN_LEFT
 
 
 def checkGZIP(url):
