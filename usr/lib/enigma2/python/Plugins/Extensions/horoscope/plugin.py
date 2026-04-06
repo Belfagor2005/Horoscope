@@ -182,7 +182,10 @@ class apList(MenuList):
 def apListEntry(name, idx):
     res = [name]
 
-    default_icon = os_path.join(resolveFilename(SCOPE_CURRENT_SKIN, "countries/missing.png"))
+    default_icon = os_path.join(
+        resolveFilename(
+            SCOPE_CURRENT_SKIN,
+            "countries/missing.png"))
 
     country_code = country_codes.get(name, None)
     if country_code:
@@ -194,21 +197,27 @@ def apListEntry(name, idx):
                 def download_flag():
                     try:
                         hUtils.download_flags(name)
-                    except:
+                    except BaseException:
                         pass
 
                 thread = threading.Thread(target=download_flag)
                 thread.daemon = True
                 thread.start()
-            except:
+            except BaseException:
                 pass
 
         if os_path.exists(online_flag) and os_path.getsize(online_flag) > 100:
             pngx = online_flag
         else:
-            pngx = os_path.join(resolveFilename(SCOPE_CURRENT_SKIN, "countries/" + country_code + ".png"))
+            pngx = os_path.join(
+                resolveFilename(
+                    SCOPE_CURRENT_SKIN,
+                    "countries/" +
+                    country_code +
+                    ".png"))
             if not os_path.isfile(pngx):
-                pngx = os_path.join(pluginpath, "countries/" + country_code + ".png")
+                pngx = os_path.join(
+                    pluginpath, "countries/" + country_code + ".png")
 
         if HALIGN == RT_HALIGN_RIGHT:
             icon_pos = (300, 30)    # 300px invece di 400
@@ -222,7 +231,8 @@ def apListEntry(name, idx):
             text_size = (300, 100)
 
     elif name[:3].upper() in [s[:3].upper() for s in selectsign]:
-        matched_sign = next((s for s in selectsign if s[:3].upper() == name[:3].upper()), None)
+        matched_sign = next(
+            (s for s in selectsign if s[:3].upper() == name[:3].upper()), None)
         if matched_sign:
             icon_name = matched_sign[:3].lower()
             pngx = pluginpath + "/iconsx/" + icon_name + ".png"
@@ -249,8 +259,12 @@ def apListEntry(name, idx):
     try:
         png_data = loadPNG(pngx)
         if png_data:
-            res.append(MultiContentEntryPixmapAlphaTest(pos=icon_pos, size=icon_size, png=png_data))
-    except:
+            res.append(
+                MultiContentEntryPixmapAlphaTest(
+                    pos=icon_pos,
+                    size=icon_size,
+                    png=png_data))
+    except BaseException:
         pass
 
     # Testo con normalizzazione Unicode
@@ -356,7 +370,7 @@ class hMain(Screen):
             thread = threading.Thread(target=clean_cache)
             thread.daemon = True
             thread.start()
-        except:
+        except BaseException:
             pass
 
         self["lab1"] = Label(_("Please wait, connecting to the server..."))
@@ -484,24 +498,24 @@ class horoscopeMain(Screen):
         else:
             self['sort'].setText(_('0 - Halign Right'))
 
-        self['actions'] = ActionMap(
-            ['EPGSelectActions', 'OkCancelActions', 'WizardActions', 'NumberActions', 'ColorActions'],
-            {
-                'ok': self.key_green,
-                'cancel': self.close,
-                'back': self.close,
-                'red': self.close,
-                'green': self.key_green,
-                '0': self.arabicx,
-                'up': self.up,
-                'down': self.down,
-                'left': self.left,
-                'right': self.right,
-                'epg': self.info,
-                'info': self.info
-            },
-            -2
-        )
+        self['actions'] = ActionMap(['EPGSelectActions',
+                                     'OkCancelActions',
+                                     'WizardActions',
+                                     'NumberActions',
+                                     'ColorActions'],
+                                    {'ok': self.key_green,
+                                     'cancel': self.close,
+                                     'back': self.close,
+                                     'red': self.close,
+                                     'green': self.key_green,
+                                     '0': self.arabicx,
+                                     'up': self.up,
+                                     'down': self.down,
+                                     'left': self.left,
+                                     'right': self.right,
+                                     'epg': self.info,
+                                     'info': self.info},
+                                    -2)
 
         self.timer = eTimer()
         if isDreambox:
@@ -536,11 +550,15 @@ class horoscopeMain(Screen):
             self.data = checkGZIP(self.url)
             self.updateInfo(self.data)
         else:
-            getPage(self.url).addCallback(self.updateInfo).addErrback(self.errorLoad)
+            getPage(
+                self.url).addCallback(
+                self.updateInfo).addErrback(
+                self.errorLoad)
 
     def errorLoad(self, error):
         print('Error occurred:', str(error))
-        self['lab1'].setText(_('Addons Download Failure\nNo internet connection or server down!'))
+        self['lab1'].setText(
+            _('Addons Download Failure\nNo internet connection or server down!'))
 
     def updateInfo(self, page):
         self.sign = []
@@ -632,7 +650,8 @@ class horoscopeMain(Screen):
         sign = self.sign[idx]
         info = self.desc[idx]
 
-        aboutbox = self.session.open(MessageBox, _(sign + '\n\n' + info), MessageBox.TYPE_INFO)
+        aboutbox = self.session.open(MessageBox, _(
+            sign + '\n\n' + info), MessageBox.TYPE_INFO)
         aboutbox.setTitle(sign)
 
     def delTimer(self):
@@ -662,4 +681,9 @@ def Plugins(path, **kwargs):
     except Exception as e:
         print("[Horoscope] Error initializing flag system:", e)
 
-    return PluginDescriptor(name=name_plug, description=title_plug, icon="plugin.png", where=PluginDescriptor.WHERE_PLUGINMENU, fnc=main)
+    return PluginDescriptor(
+        name=name_plug,
+        description=title_plug,
+        icon="plugin.png",
+        where=PluginDescriptor.WHERE_PLUGINMENU,
+        fnc=main)
